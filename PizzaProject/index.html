@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Pizza Assignment</title>
+		<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+		<script src="./js/pizzaJS.js"></script>
+
+	</head>
+	<body background="./img/pie.jpg">
+
+	<div id="myPizza">
+	<button type="button" class="btn btn-danger btn-lg btn-block">Create Your Pizza</button>
+
+	<div class="card-group" id="1">
+		<div class="card" style="width: 18rem;">
+		  <div class="card-header">
+			Size
+		  </div>
+		 	<ul id="poll1" class="list-group list-group-flush">
+				<li class="list-group-item">
+					<label>
+						<input class='size' type='radio' name='Size' value='Personal Pizza'>
+						Personal
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label>
+						<input class='size' type='radio' name='Size' value='Medium Pizza'>
+						Medium
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label>
+						<input class='size' type='radio' name='Size' value='Large Pizza'>
+						Large
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label>
+						<input class='size' type='radio' name='Size' value='Xtra Large Pizza'>
+						Xtra Large
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="card" style="width: 18rem;">
+		  <div class="card-header">
+			MEAT
+		  </div>
+		  <ul id="poll2" class="list-group list-group-flush">
+			<form>
+			  <div class="multiselect">
+				<div class="selectBox" onclick="showCheckboxes()">
+				  <div class="overSelect"></div>
+				</div>
+				<div id="checkboxes">
+				  <label>
+					<input type="checkbox" class='meats' name='Meat' value='Pepperoni'>Pepperoni</label><br />
+				  <label>
+					<input type="checkbox" class='meats' name='Meat' value='Sausage'>Sausage</label><br />
+				  <label>
+					<input type="checkbox" class='meats' name='Meat' value='Canadian Bacon'>Canadian Bacon</label><br />
+				  <label>
+					<input type="checkbox" class='meats' name='Meat' value='Ground Beef'>Ground Beef</label><br />
+				  <label>
+					<input type="checkbox" class='meats' name='Meat' value='Anchovy'>Anchovy</label><br />
+				  <label>
+					<input type="checkbox" class='meats' name='Meat' value='Chicken'>Chicken</label><br />
+					
+				</div>
+			  </div>
+			</form>
+		  </ul>
+		</div>
+		
+		<div class="card" style="width: 18rem;">
+		  <div class="card-header">
+			CHEESE
+		  </div>
+		 	<ul id="poll3" class="list-group list-group-flush">
+				<li class="list-group-item">
+					<label>
+						<input class='cheeses' type='radio' name='Cheese' value='Regular'>
+						Regular
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label>
+						<input class='cheeses' type='radio' name='Cheese' value='No Cheese'>
+						No Cheese
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label>
+						<input class='cheeses' type='radio' name='Cheese' value='Xtra Cheese'>
+						Xtra Cheese
+					</label>
+				</li>
+			</ul>
+		</div><br />
+		<br />
+		<div class="card" style="width: 18rem;">
+		  <div class="card-header">
+			CRUST
+		  </div>
+			<ul id="poll4" class="list-group list-group-flush">
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='crusts' type='radio' name='Crust' value='Plain Crust'>
+						Plain
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='crusts' type='radio' name='Crust' value='Garlic Butter Crust'>
+						Garlic Butter
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='crusts' type='radio' name='Crust' value='Cheese Stuffed Crust'>
+						Cheese Stuffed
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='crusts' type='radio' name='Crust' value='Spicy Crust'>
+						Spicy
+						</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='crusts' type='radio' name='Crust' value='House Special Crust'>
+						House Special
+						</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="card" style="width: 18rem;">
+		  <div class="card-header">
+			SAUCE
+		  </div>
+			<ul id="poll5" class="list-group list-group-flush">
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='sauces' type="radio" name='Sauce' value='Marinara'>
+						Marinara
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='sauces' type="radio" name='Sauce' value='White Sauce'>
+						White Sauce
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='sauces' type="radio" name='Sauce' value='BBQ'>
+						BBQ
+					</label>
+				</li>
+				<li class="list-group-item">
+					<label class='poll_active'>
+						<input class='sauces' type="radio" name='Sauce' value='No Sauce'>
+						No Sauce
+						</label>
+				</li>
+			</ul>
+		</div>
+		
+		<div class="card" style="width: 18rem;">
+		  <div class="card-header">
+			VEGGIES
+		  </div>
+		  <ul id="poll6" class="list-group list-group-flush">
+			<form>
+			  <div class="multiselect">
+				<div class="selectBox" onclick="showCheckboxes()">
+				  <div class="overSelect"></div>
+				</div>
+				<div id="checkboxes">
+				  <label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Tomatoes'>Tomatoes</label><br />
+				  <label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Onions'>Onions</label><br />
+				  <label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Olives'>Olives</label><br />
+					<label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Green Peppers'>Green Peppers</label><br />
+				  <label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Mushrooms'>Mushrooms</label><br />
+					<label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Pineapple'>Pineapple</label><br />
+				  <label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Spinach'>Spinach</label><br />
+					<label>
+					<input type="checkbox" class='veggies' name='Veggie' value='Jalapeno'>Jalapeno</label><br />
+					
+				</div>
+			  </div>
+			</form>
+		  </ul>
+		</div>
+	</div>
+	
+	<input id="btnOrder" type="button" value="Get Total" onclick="getReceipt()" />
+	<div id="receipt">
+		<div id="showText"></div>
+		<div id="totalPrice"></div>
+	</div>
+	</div>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	</body>
+</html>
